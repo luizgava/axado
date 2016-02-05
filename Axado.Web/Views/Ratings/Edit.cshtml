@@ -1,0 +1,19 @@
+﻿@model Axado.Web.Models.RatingViewModel
+@{
+    ViewBag.Title = $"Edit rate - Carrier: {Model.CarrierName}";
+}
+@using (Html.BeginForm())
+{
+    <h2>@ViewBag.Title</h2>
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(m => m.CarrierId)
+    <div class="form-group">
+        @Html.LabelFor(m => m.Rating)
+        @Html.EditorFor(m => m.Rating, new { htmlAttributes = new { @class = "form-control", @style = "width: 100px" } })
+        @Html.ValidationMessageFor(m => m.Rating)
+    </div>
+    <p>
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </p>
+}

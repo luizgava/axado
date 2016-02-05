@@ -1,0 +1,26 @@
+﻿@model Axado.Web.Models.CarriersListViewModel
+@if (Model.TotalPages > 1)
+{
+    var nextPage = -1;
+
+    if (Model.Page < Model.TotalPages)
+    {
+        nextPage = Model.Page + 1;
+    }
+
+    <div class="pagination">
+        @if (Model.Page > 1)
+        {
+            @Html.ActionLink("Previous page", "Index", new { search = Model.Search, page = Model.Page - 1 }, new { rel = "prev" })
+
+            if (nextPage != -1)
+            {
+                <text>|</text>
+            }
+        }
+        @if (nextPage != -1)
+        {
+            @Html.ActionLink("Next page", "Index", new { search = Model.Search, page = nextPage }, new { rel = "next" });
+        }
+    </div>
+}

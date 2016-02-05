@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axado.Web", "Axado.Web\Axado.Web.csproj", "{0C3A5049-DF88-4DAD-97A2-4AA80CA9DED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axado.Repository", "Axado.Repository\Axado.Repository.csproj", "{3508A173-66DF-4490-A664-C624E359E771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3A5049-DF88-4DAD-97A2-4AA80CA9DED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3A5049-DF88-4DAD-97A2-4AA80CA9DED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3A5049-DF88-4DAD-97A2-4AA80CA9DED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3A5049-DF88-4DAD-97A2-4AA80CA9DED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3508A173-66DF-4490-A664-C624E359E771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3508A173-66DF-4490-A664-C624E359E771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3508A173-66DF-4490-A664-C624E359E771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3508A173-66DF-4490-A664-C624E359E771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
