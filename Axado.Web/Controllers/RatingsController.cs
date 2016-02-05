@@ -16,6 +16,17 @@ namespace Axado.Web.Controllers
         public ActionResult Create(int id)
         {
             var context = new Context();
+            var userId = int.Parse(HttpContext.User.Identity.Name);
+            var exist = (from r in context.CarrierRating
+                             join c in context.Carriers on r.CarrierId equals c.Id
+                             where r.CarrierId == id
+                                && r.UserId == userId
+                             select r).Any();
+            if (exist)
+            {
+                return RedirectToAction("Edit", new { id = id });
+            }
+
             var carrier = (from p in context.Carriers
                             where p.Id == id
                             select p).FirstOrDefault();

@@ -8,7 +8,7 @@ using Axado.Repository.Models;
 
 namespace Axado.Repository.Infra
 {
-    public class AxadoCustomInitializer : DropCreateDatabaseAlways<Context>
+    public class AxadoCustomInitializer : CreateDatabaseIfNotExists<Context>
     {
         protected override void Seed(Context context)
         {
