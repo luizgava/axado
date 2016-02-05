@@ -23,6 +23,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Carriers")</li>
                     @if (Request.IsAuthenticated)
                     {
+                        <li>@Html.ActionLink("Users", "Index", "Users")</li>
                         <li>@Html.ActionLink("Exit", "Exit", "Login")</li>
                     }
                     else
@@ -30,7 +31,7 @@
                         <li>@Html.ActionLink("Login", "Index", "Login")</li>
                     }
                 </ul>
-                <form method="get" class="navbar-form navbar-right">
+                <form method="get" action="/Carriers/Index" class="navbar-form navbar-right">
                     <div class="form-group">
                         @Html.TextBox("search", null, new { placeholder = "Search", @class = "form-control" })
                     </div>

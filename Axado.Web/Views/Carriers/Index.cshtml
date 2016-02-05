@@ -31,7 +31,7 @@
             <td>@item.RatingAvg</td>
             @if (item.UserAlreadyRate)
             {
-                <td>@Html.ActionLink("Edit rate", "Edit", "Ratings", new { id = item.Id }, null) / @Html.ActionLink("Delete rate", "Delete", "Ratings", new { id = item.Id }, null)</td>
+                <td>@Html.ActionLink("Edit rate", "Edit", "Ratings", new { id = item.Id }, null) | @Html.ActionLink("Delete rate", "Delete", "Ratings", new { id = item.Id }, null)</td>
             }
             else
             {
